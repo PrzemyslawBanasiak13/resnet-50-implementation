@@ -1,3 +1,4 @@
 
-.ipynb_checkpoints/model-creation-checkpoint.ipynb
+.ipynb_checkpoints
 human-detection-dataset
+__pycache__
