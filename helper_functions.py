@@ -27,3 +27,18 @@ def plot_images(image_folder="food101", img_count=4):
 
     fig.tight_layout()
     plt.show()
+
+
+def plot_losses(history):
+    """
+    Plot <img_count> random images from <folder_name> from subfolders
+    """
+    fig = plt.figure()
+    fig.set_size_inches(18.5, 10.5)
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
+    plt.title('train and valid loss vs epoch')
+    plt.ylabel('loss')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.show()
