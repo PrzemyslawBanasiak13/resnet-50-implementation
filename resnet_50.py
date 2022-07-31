@@ -116,7 +116,7 @@ def get_model(input_shape=(256, 256, 3)):
 
     # output layer
     x = Flatten()(x)
-    x = Dense(1, activation='sigmoid')(x)
+    x = Dense(101, activation='softmax')(x)
 
     # create model
     model = Model(inputs=i, outputs=x, name='ResNet-50')
