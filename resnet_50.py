@@ -116,6 +116,7 @@ def get_model(input_shape=(256, 256, 3)):
 
     # output layer
     x = Flatten()(x)
+    x = Dropout(0.2)(x)
     x = Dense(101, activation='softmax')(x)
 
     # create model
