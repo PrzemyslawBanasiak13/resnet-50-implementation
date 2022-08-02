@@ -1,6 +1,6 @@
 
 from keras.layers import Input, Add, Dense, Activation, ZeroPadding2D, BatchNormalization, Flatten, Conv2D, \
-    AveragePooling2D, MaxPooling2D
+    AveragePooling2D, MaxPooling2D, Dropout
 from keras.models import Model
 
 
